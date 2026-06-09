@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-🔗 **[View Live Site](https://ayushmanmuni.github.io/CareConnect/)**
+🔗 **[View Live Site](https://careconnect-ngo-support.netlify.app)**
 
 ---
 
