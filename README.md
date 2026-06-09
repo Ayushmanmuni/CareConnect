@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-🔗 **[View Live Site](#)** *(link will be updated after deployment)*
+🔗 **[View Live Site](https://ayushmanmuni.github.io/CareConnect/)**
 
 ---
 
@@ -40,28 +40,39 @@ CareBot is a chatbot that sits in the bottom-right corner of the page. Users cli
 - Auto-triage concept — urgency levels are logged on form submission
 - Volunteer-patient matching concept — skills are matched to patient needs
 
-**Future scope:** Integration with LLM APIs (Gemini/GPT), multi-language support, ML-based triage scoring.
+**Future enhancements (production roadmap):**
+- Integration with LLM APIs (e.g., Gemini / GPT) for open-ended conversations
+- Multi-language support via translation API
+- ML-based patient request triage and priority scoring
+- Real-time volunteer matching engine
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-----------|---------|
+| **HTML5** | Semantic page structure, accessibility |
+| **CSS3** | Custom design system with CSS variables, glassmorphism, gradients, animations, responsive grid |
+| **Vanilla JavaScript** | Form validation, chatbot engine, scroll animations, counter animations, DOM manipulation |
+| **Google Fonts (Inter)** | Modern typography |
+
+> **No frameworks or build tools required.** The app is a pure static site — just open `index.html` or deploy to any static hosting.
 
 ---
 
 ## NGO Use-Case
 
-**Problem:** Underserved communities can't easily access healthcare. NGOs waste time answering repeated questions and manually matching patients with volunteers.
+**Problem:** Underserved communities lack easy access to healthcare guidance. NGOs face bottlenecks in:
+- Manually processing patient support requests
+- Matching volunteers to patients efficiently
+- Answering repetitive FAQ queries (consuming volunteer time)
 
-**Solution:** CareConnect lets patients self-register, answers 80% of FAQs automatically via the chatbot, and structures data so coordinators can act faster.
-
----
-
-## Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| HTML5 | Page structure and semantics |
-| CSS3 | Custom design system, responsive layout, animations |
-| Vanilla JavaScript | Form validation, chatbot engine, scroll animations |
-| Google Fonts (Inter) | Modern typography |
-
-No frameworks or build tools needed — it's a static site that runs directly in the browser.
+**Solution:** This web app provides:
+1. **Self-service forms** — patients and volunteers can register without phone calls
+2. **AI chatbot** — handles 80% of common queries automatically, freeing up coordinator time
+3. **Structured data** — auto-summaries enable NGO coordinators to triage and allocate resources faster
+4. **Mobile-friendly** — accessible from low-end smartphones in remote areas
 
 ---
 
