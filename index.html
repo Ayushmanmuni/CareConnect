@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareConnect — Free Patient Support &amp; Healthcare Help</title>
+  <meta name="description" content="CareConnect is an NGO-powered patient support platform with AI-assisted FAQ chatbot, volunteer registration, and patient support services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <svg class="logo-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="#2563EB"/>
+          <path d="M16 6C13.5 6 11 8 11 11C11 14 13 16 16 20C19 16 21 14 21 11C21 8 18.5 6 16 6Z" fill="white" opacity="0.9"/>
+          <path d="M14 22H18V24H14V22Z" fill="white" opacity="0.7"/>
+          <path d="M13 14H19V15.5H13V14Z" fill="white" opacity="0.5"/>
+          <rect x="14.5" y="10" width="3" height="6" rx="0.5" fill="#2563EB"/>
+          <rect x="13" y="11.5" width="6" height="3" rx="0.5" fill="#2563EB"/>
+        </svg>
+        <span class="logo-text">Care<span class="logo-accent">Connect</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#patient-form" class="nav-link">Get Help</a></li>
+        <li><a href="#volunteer-form" class="nav-link">Volunteer</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="5" y="1" width="6" height="14" rx="1" fill="#2563EB"/><rect x="1" y="5" width="14" height="6" rx="1" fill="#2563EB"/></svg>
+        Free Healthcare Support for Everyone
+      </div>
+      <h1 class="hero-title">
+        Need Medical Help?<br>
+        <span class="highlight-text">We Connect You — For Free.</span>
+      </h1>
+      <p class="hero-subtitle">
+        CareConnect is a non-profit that helps patients get free healthcare support. 
+        Fill a simple form and our volunteers will contact you within 24 hours. 
+        You can also chat with our AI assistant for instant answers.
+      </p>
+      <div class="hero-actions">
+        <a href="#patient-form" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C5.58 2 2 5.58 2 10s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm-1 12H7v-2h2v2zm0-4H7V6h2v4zm4 4h-2v-2h2v2zm0-4h-2V6h2v4z" fill="currentColor"/></svg>
+          I Need Help — Fill Form
+        </a>
+        <a href="#volunteer-form" class="btn btn-outline btn-lg">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 10a3 3 0 100-6 3 3 0 000 6zm0 2c-4 0-7 2-7 4v1h14v-1c0-2-3-4-7-4z" fill="currentColor"/></svg>
+          I Want to Volunteer
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.49L10 13.48 5.06 16.1 6 10.61 2 6.71l5.61-.87L10 1z" fill="#F59E0B"/></svg>
+          <span>2,500+ Patients Helped</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 10a3 3 0 100-6 3 3 0 000 6zm0 2c-4 0-7 2-7 4v1h14v-1c0-2-3-4-7-4z" fill="#10B981"/></svg>
+          <span>180+ Active Volunteers</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L3 7v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1V7l-7-5z" fill="#8B5CF6"/></svg>
+          <span>35+ Communities</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card hero-card-1">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#EF4444"/></svg>
+        <div>
+          <strong>Patient Riya</strong>
+          <small>Got free treatment in 2 days</small>
+        </div>
+      </div>
+      <div class="hero-card hero-card-2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#10B981"/></svg>
+        <div>
+          <strong>AI Chatbot Active</strong>
+          <small>Get answers instantly, 24/7</small>
+        </div>
+      </div>
+      <div class="hero-card hero-card-3">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="#2563EB"/></svg>
+        <div>
+          <strong>180+ Volunteers</strong>
+          <small>Doctors, nurses, counselors</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section id="how-it-works" class="section how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How Does CareConnect Work?</h2>
+        <p class="section-desc">Getting help is easy. Just follow these 3 simple steps — no login, no fees, no paperwork.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Fill the Form</h3>
+          <p>Tell us your name, location, and health concern. Takes less than 2 minutes.</p>
+        </div>
+        <div class="step-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>We Match a Volunteer</h3>
+          <p>Our system finds the right volunteer — a doctor, nurse, or counselor near you.</p>
+        </div>
+        <div class="step-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Get Help Within 24 Hrs</h3>
+          <p>Our volunteer contacts you by phone. Get guidance, referrals, or direct medical help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What We Offer</h2>
+        <p class="section-desc">All services are 100% free. We are a non-profit NGO helping communities access healthcare.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon service-icon-blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z" stroke="currentColor" stroke-width="2"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Patient Support</h3>
+          <p>Submit your health concern. We connect you with a nearby doctor or healthcare volunteer — completely free.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon service-icon-green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10h.01M12 10h.01M16 10h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>AI Health Assistant</h3>
+          <p>Click the chat button (bottom-right) to instantly ask health questions. Available 24/7, no signup needed.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon service-icon-purple">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="8.5" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M20 8v6M23 11h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Volunteer Matching</h3>
+          <p>Register as a volunteer. We match your skills (doctor, nurse, counselor, tech) with patients who need you.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon service-icon-amber">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 20V10M18 20V4M6 20v-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Smart Data Summary</h3>
+          <p>Every request is auto-summarised for NGO coordinators, helping them track patient needs and allocate resources faster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PATIENT SUPPORT FORM ========== -->
+  <section id="patient-form" class="section form-section">
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="form-info">
+          <div class="form-info-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            100% Free &amp; Confidential
+          </div>
+          <h2 class="section-title">Need Medical Help?</h2>
+          <p class="form-info-desc">Fill this form and a healthcare volunteer will call you within 24 hours. Your information is kept private and secure.</p>
+          <div class="form-features">
+            <div class="feature">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#DCFCE7"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              No charges — everything is free
+            </div>
+            <div class="feature">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#DCFCE7"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Your data stays private &amp; secure
+            </div>
+            <div class="feature">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#DCFCE7"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              A volunteer calls you within 24 hours
+            </div>
+            <div class="feature">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#DCFCE7"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Available in Hindi &amp; English
+            </div>
+          </div>
+        </div>
+        <form id="patientSupportForm" class="form-card" novalidate>
+          <div class="form-card-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Patient Support Form</span>
+          </div>
+          <div class="form-group">
+            <label for="patient-name">Your Full Name <span class="req">*</span></label>
+            <input type="text" id="patient-name" name="patientName" placeholder="e.g. Riya Sharma" required>
+            <span class="error-msg" id="patient-name-error"></span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patient-age">Age <span class="req">*</span></label>
+              <input type="number" id="patient-age" name="patientAge" placeholder="e.g. 28" min="0" max="120" required>
+              <span class="error-msg" id="patient-age-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="patient-gender">Gender</label>
+              <select id="patient-gender" name="patientGender">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer-not">Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="patient-phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="patient-phone" name="patientPhone" placeholder="e.g. 98765 43210" required>
+            <span class="error-msg" id="patient-phone-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="patient-location">Your City or Village</label>
+            <input type="text" id="patient-location" name="patientLocation" placeholder="e.g. Lucknow, UP">
+          </div>
+          <div class="form-group">
+            <label for="patient-issue">What health problem do you need help with? <span class="req">*</span></label>
+            <textarea id="patient-issue" name="patientIssue" rows="3" placeholder="e.g. I have been having chest pain for 3 days and cannot afford to see a doctor..." required></textarea>
+            <span class="error-msg" id="patient-issue-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="patient-urgency">How urgently do you need help?</label>
+            <select id="patient-urgency" name="patientUrgency">
+              <option value="normal">Not urgent — within a week is fine</option>
+              <option value="moderate">Somewhat urgent — need help in 2-3 days</option>
+              <option value="urgent">Very urgent — need help today</option>
+            </select>
+          </div>
+          <button type="submit" id="patient-submit-btn" class="btn btn-primary btn-full">
+            <span class="btn-text">Submit My Request</span>
+            <span class="btn-loader" style="display:none;"></span>
+          </button>
+          <div id="patient-success" class="success-msg" style="display:none;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#DCFCE7"/><path d="M8 12l3 3 5-5" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <strong>Your request has been submitted!</strong>
+              <p>A volunteer will call you within 24 hours. Your reference number: <strong id="patient-ref"></strong></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VOLUNTEER FORM ========== -->
+  <section id="volunteer-form" class="section form-section volunteer-section">
+    <div class="container">
+      <div class="form-wrapper reverse">
+        <form id="volunteerForm" class="form-card" novalidate>
+          <div class="form-card-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#10B981" stroke-width="2" stroke-linecap="round"/><circle cx="8.5" cy="7" r="4" stroke="#10B981" stroke-width="2"/><path d="M20 8v6M23 11h-6" stroke="#10B981" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Volunteer Registration</span>
+          </div>
+          <div class="form-group">
+            <label for="vol-name">Your Full Name <span class="req">*</span></label>
+            <input type="text" id="vol-name" name="volName" placeholder="e.g. Amit Verma" required>
+            <span class="error-msg" id="vol-name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="vol-email">Email Address <span class="req">*</span></label>
+            <input type="email" id="vol-email" name="volEmail" placeholder="e.g. amit@gmail.com" required>
+            <span class="error-msg" id="vol-email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="vol-phone">Phone Number</label>
+            <input type="tel" id="vol-phone" name="volPhone" placeholder="e.g. 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="vol-skills">What is your profession? <span class="req">*</span></label>
+            <select id="vol-skills" name="volSkills" required>
+              <option value="">— Select your area —</option>
+              <option value="doctor">Doctor / Medical Professional</option>
+              <option value="nurse">Nurse / Paramedic</option>
+              <option value="counselor">Counselor / Therapist</option>
+              <option value="tech">Tech / Data Volunteer</option>
+              <option value="logistics">Logistics / Field Work</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="error-msg" id="vol-skills-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="vol-availability">When are you available?</label>
+            <select id="vol-availability" name="volAvailability">
+              <option value="weekends">Weekends only</option>
+              <option value="weekdays">Weekdays (office hours)</option>
+              <option value="flexible">Flexible / Anytime</option>
+              <option value="remote">Remote only</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="vol-message">Why do you want to volunteer? (optional)</label>
+            <textarea id="vol-message" name="volMessage" rows="3" placeholder="Tell us what motivates you..."></textarea>
+          </div>
+          <button type="submit" id="vol-submit-btn" class="btn btn-success btn-full">
+            <span class="btn-text">Register as Volunteer</span>
+            <span class="btn-loader" style="display:none;"></span>
+          </button>
+          <div id="vol-success" class="success-msg" style="display:none;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#DCFCE7"/><path d="M8 12l3 3 5-5" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <strong>Welcome to the team!</strong>
+              <p>You're registered. We'll email you onboarding info. Ref: <strong id="vol-ref"></strong></p>
+            </div>
+          </div>
+        </form>
+        <div class="form-info">
+          <div class="form-info-badge badge-green">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#10B981"/></svg>
+            Help People Who Need You
+          </div>
+          <h2 class="section-title">Become a Volunteer</h2>
+          <p class="form-info-desc">Give your time and skills to help patients in need. Whether you're a doctor, nurse, counselor, or tech professional — every hand counts.</p>
+          <div class="form-features">
+            <div class="feature">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#D1FAE5"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Choose your own hours
+            </div>
+            <div class="feature">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#D1FAE5"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Work remotely or on-ground
+            </div>
+            <div class="feature">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#D1FAE5"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Get a certificate of volunteering
+            </div>
+            <div class="feature">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#D1FAE5"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Make a real difference in someone's life
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-desc">Have questions? Reach out to us anytime.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#2563EB" stroke-width="2"/><path d="M22 6l-10 7L2 6" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Email</h3>
+          <p>support@careconnect.org</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#10B981" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Helpline</h3>
+          <p>+91 800-CARE-NOW</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" stroke="#8B5CF6" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="#8B5CF6" stroke-width="2"/></svg>
+          </div>
+          <h3>Office</h3>
+          <p>New Delhi, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="logo-svg" width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#2563EB"/>
+            <rect x="14.5" y="10" width="3" height="6" rx="0.5" fill="white"/>
+            <rect x="13" y="11.5" width="6" height="3" rx="0.5" fill="white"/>
+          </svg>
+          <span class="logo-text">Care<span class="logo-accent">Connect</span></span>
+          <p class="footer-tagline">Technology for compassionate healthcare.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#services">Services</a>
+          <a href="#patient-form">Get Help</a>
+          <a href="#volunteer-form">Volunteer</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CareConnect NGO &middot; Made with care for communities in need.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== AI CHATBOT ========== -->
+  <div id="chatbot-toggle" class="chatbot-toggle" aria-label="Open AI Health Assistant">
+    <svg class="chatbot-icon-svg" width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" fill="white"/><path d="M8 10h.01M12 10h.01M16 10h.01" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/></svg>
+    <span class="chatbot-label">Ask AI</span>
+    <span class="chatbot-pulse"></span>
+  </div>
+
+  <div id="chatbot-window" class="chatbot-window" style="display:none;">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" fill="white"/><path d="M8 10h.01M12 10h.01M16 10h.01" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <strong>CareBot — AI Assistant</strong>
+          <span class="chatbot-status">Online &middot; Ask any health question</span>
+        </div>
+      </div>
+      <button id="chatbot-close" class="chatbot-close" aria-label="Close chatbot">&times;</button>
+    </div>
+    <div id="chatbot-messages" class="chatbot-messages">
+      <!-- messages rendered by JS -->
+    </div>
+    <div class="chatbot-suggestions" id="chatbot-suggestions">
+      <!-- quick reply buttons rendered by JS -->
+    </div>
+    <form id="chatbot-input-form" class="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="Type your question here..." autocomplete="off">
+      <button type="submit" id="chatbot-send" class="chatbot-send" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
